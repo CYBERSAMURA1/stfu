@@ -10,25 +10,25 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton nextpage;
+    ImageButton btnNextPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        nextpage = (ImageButton) findViewById(R.id.next);
+        btnNextPage = (ImageButton) findViewById(R.id.next);
 
         TextView number = (TextView)findViewById(R.id.number);
         number.setText("1");
 
         RelativeLayout background = (RelativeLayout)findViewById(R.id.background);
-        background.setBackgroundColor(getResources().getColor(R.color.fst));
+        background.setBackgroundColor(getResources().getColor(R.color.frst));
 
-        ImageButton prevpage =(ImageButton)findViewById(R.id.prev);
-        prevpage.setVisibility(View.INVISIBLE);
+        ImageButton btnPrevPage =(ImageButton)findViewById(R.id.prev);
+        btnPrevPage.setVisibility(View.INVISIBLE);
 
 
-        nextpage.setOnClickListener(new View.OnClickListener(){
+        btnNextPage.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(MainActivity.this,Activity2.class);

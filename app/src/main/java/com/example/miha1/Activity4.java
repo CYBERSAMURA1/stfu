@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class Activity4 extends AppCompatActivity {
 
-    ImageButton nextpage, prevpage;
+    ImageButton btnNextPage, bntPrevPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,10 +25,10 @@ public class Activity4 extends AppCompatActivity {
         RelativeLayout background = (RelativeLayout)findViewById(R.id.background);
         background.setBackgroundColor(getResources().getColor(R.color.frth));
 
-        nextpage = (ImageButton)findViewById(R.id.next);
-        prevpage = (ImageButton)findViewById(R.id.prev);
+        btnNextPage = (ImageButton)findViewById(R.id.next);
+        bntPrevPage = (ImageButton)findViewById(R.id.prev);
 
-        nextpage.setOnClickListener(new View.OnClickListener() {
+        btnNextPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Activity4.this,Activity5.class);
@@ -36,7 +36,7 @@ public class Activity4 extends AppCompatActivity {
             }
         });
 
-        prevpage.setOnClickListener(new View.OnClickListener() {
+        bntPrevPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
