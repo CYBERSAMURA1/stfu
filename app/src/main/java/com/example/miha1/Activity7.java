@@ -17,7 +17,6 @@ public class Activity7 extends AppCompatActivity {
     }
 
     public void prevpage(View v){
-        Intent intent = new Intent(this,Activity6.class);
-        startActivity(intent);
+        this.finish();
     }
 }

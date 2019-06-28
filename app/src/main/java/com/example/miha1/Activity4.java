@@ -22,7 +22,6 @@ public class Activity4 extends AppCompatActivity {
     }
 
     public void prevpage(View v){
-        Intent intent = new Intent(this,Activity3.class);
-        startActivity(intent);
+        this.finish();
     }
 }
