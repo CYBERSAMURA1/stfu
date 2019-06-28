@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +17,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         nextpage = (ImageButton) findViewById(R.id.next);
+
+        TextView number = (TextView)findViewById(R.id.number);
+        number.setText("1");
+
+        RelativeLayout background = (RelativeLayout)findViewById(R.id.background);
+        background.setBackgroundColor(getResources().getColor(R.color.fst));
+
+        ImageButton prevpage =(ImageButton)findViewById(R.id.prev);
+        prevpage.setVisibility(View.INVISIBLE);
+
 
         nextpage.setOnClickListener(new View.OnClickListener(){
             @Override

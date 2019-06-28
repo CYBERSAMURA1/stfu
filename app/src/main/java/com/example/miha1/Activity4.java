@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 
 public class Activity4 extends AppCompatActivity {
@@ -15,7 +17,14 @@ public class Activity4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_4);
+        setContentView(R.layout.activity_main);
+
+        TextView number = (TextView)findViewById(R.id.number);
+        number.setText("4");
+
+        RelativeLayout background = (RelativeLayout)findViewById(R.id.background);
+        background.setBackgroundColor(getResources().getColor(R.color.frth));
+
         nextpage = (ImageButton)findViewById(R.id.next);
         prevpage = (ImageButton)findViewById(R.id.prev);
 

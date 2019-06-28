@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#aaaaaa"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/number1"
+        android:id="@+id/number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/number1"
         android:textColor="@color/white"
         android:layout_marginLeft="180dp"
         android:layout_marginTop="20dp"
@@ -22,6 +21,14 @@
         android:layout_height="50dp"
         android:layout_marginTop="500dp"
         android:layout_marginLeft="300dp"
-        android:background="@mipmap/nxt"
-        android:onClick="nextpage"/>
+        android:background="@mipmap/nxt" />
+
+    <ImageButton
+        android:id="@+id/prev"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="100dp"
+        android:background="@mipmap/prev" />
+
 </RelativeLayout>
