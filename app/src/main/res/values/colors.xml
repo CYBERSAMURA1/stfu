@@ -12,4 +12,9 @@
     <color name="sxth">#f12739</color>
     <color name="svnth">#002a11</color>
 
+    <array name="colors">
+        <item>
+            <color>#123</color>
+        </item>
+    </array>
 </resources>
