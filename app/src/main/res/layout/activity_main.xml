@@ -11,24 +11,33 @@
         android:id="@+id/number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:textColor="@color/white"
-        android:layout_marginLeft="180dp"
-        android:layout_marginTop="20dp"
         android:textSize="30sp"/>
     <ImageButton
         android:id="@+id/next"
+        android:layout_margin="30dp"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="500dp"
-        android:layout_marginLeft="300dp"
-        android:background="@mipmap/nxt" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/next_page" />
 
     <ImageButton
         android:id="@+id/prev"
+        android:layout_margin="30dp"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="500dp"
-        android:layout_marginLeft="100dp"
-        android:background="@mipmap/prev" />
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/prev_page" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/start"
+        />
 
 </RelativeLayout>

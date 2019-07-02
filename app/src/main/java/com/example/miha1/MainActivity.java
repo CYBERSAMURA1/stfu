@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -19,13 +20,14 @@ public class MainActivity extends AppCompatActivity {
 
     ImageButton btnNextPage, btnPrevPage;
 
+    Button btnStart;
+
     TextView pageNumber;
 
     RelativeLayout background;
 
     int a = 1;
 
-    @SuppressLint("DefaultLocale")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
         btnNextPage = findViewById(R.id.next);
         btnPrevPage = findViewById(R.id.prev);
+
+        btnStart = findViewById(R.id.start);
 
         pageNumber = (TextView) findViewById(R.id.number);
 
@@ -46,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
 //теперь тебе надо получить данные по ключу ключ у тебя "number" - это константа лучше вынеси ее
 
-//       name  - String
+//       name  - String slishish men
 
 
         background = findViewById(R.id.background);
@@ -58,6 +62,10 @@ public class MainActivity extends AppCompatActivity {
 
         if (keyNumber == 7) {
             btnNextPage.setVisibility(View.INVISIBLE);
+        }
+
+        if(keyNumber > 1) {
+            btnStart.setVisibility(View.INVISIBLE);
         }
 
         btnNextPage.setOnClickListener(new View.OnClickListener() {
@@ -79,6 +87,14 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        btnStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Activity2.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -96,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
+//крч давай сейчас сделай чтоб на первом активити была кнопка старт и открывалось другое активити новое, создай его
 
-
+//вот точно исправь ее
 
