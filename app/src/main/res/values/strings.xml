@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Miha1</string>
     <string name="start">START</string>
+    <string-array name="spinner1">
+        <item>+</item>
+        <item>-</item>
+        <item>*</item>
+        <item>/</item>
+    </string-array>
 </resources>
